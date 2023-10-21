@@ -1,0 +1,88 @@
+.container-app {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 2px rgb(23, 190, 190);
+    border-top: solid 2px rgb(23, 190, 190);
+    background-color: rgb(247, 251, 255);
+}
+
+.birdList {
+    margin: 1vw;
+    min-width: 20%;
+    cursor: pointer;
+    height: 60vh;
+    overflow: auto;
+    list-style: none;
+}
+
+.information-bird {
+    margin: 1vw;
+    min-width: 70vw;
+    max-height: 60vh;
+    overflow: auto;
+
+}
+
+.header {
+    height: 20vh;
+    background-image: url("./assets/imgs/aves-chile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: contrast(200%);
+}
+
+.footer {
+    height: 15.4vh;
+    background-color: #083535;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+input {
+    position: sticky;
+    z-index: 1; 
+}
+
+
+ul {
+    list-style: none;
+}
+
+li:hover {
+    color: gold;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline solid #3774d7;
+}
+
+h4 {
+    text-shadow: 1px 0px 7px #a1a838;
+}
+
+/* Estilos para dispositivos de tamaño tablet */
+@media (max-width: 768px) {
+    .container-app {
+        flex-direction: column;
+    }
+
+    .birdList {
+        height: 20vh;
+    }
+
+    .information-bird {
+        min-height: 41vh;
+        overflow:auto;
+    }
+
+    .footer {
+        min-height: 5vh;
+        background-color: #083535;
+    }
+}
+
